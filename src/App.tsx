@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { useUserAgentType } from './hooks/userAgentTypHook'
+import { useUserAgentType } from './hooks/userAgentTypeHook'
 
 export const App: React.FC = () => {
   const userAgent = navigator.userAgent

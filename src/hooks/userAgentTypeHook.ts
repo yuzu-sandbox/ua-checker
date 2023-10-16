@@ -8,6 +8,10 @@ const getDeviceType = (userAgent: string): DeviceType => {
     return 'ios'
   }
 
+  if(/macintosh/.test(ua) && 'ontouchend' in document) {
+    return 'ios'
+  }
+
   if (/android/.test(ua)) {
     return 'android'
   }

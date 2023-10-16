@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'ua-checker',
+  base: process.env.GITHUB_PAGES ? 'ua-checker' : '/',
   build: {
     outDir: 'docs',
   },
